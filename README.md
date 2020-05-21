@@ -12,15 +12,15 @@
 
 
 - [Subtitle](#subtitle)
-- [Subtitle usage example](#subtitle-usage-example)
-- [Edit File](#edit-file)
-- [Wildcard usage example](#wildcard-usage-example)
-- [Find information in file](#find-information-in-file)
-- [Creating file / folder](#creating-file--folder)
-- [Info about commands](#info-about-commands)
-- [SSH Key for remote host connection](#ssh-key-for-remote-host-connection)
-- [Network troubleshooting](#network-troubleshooting)
-- [Process management](#process-management)
+- [Subtitle Example](#subtitle-example)
+- [File Editing](#file-editing)
+- [Wildcard Example](#wildcard-example)
+- [Information Search on File](#information-search-on-file)
+- [File / Folder Creation](#file--folder-creation)
+- [Command Info](#command-info)
+- [SSH Key for Remote Access](#ssh-key-for-remote-access)
+- [Network Troubleshooting](#network-troubleshooting)
+- [Process Management](#process-management)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -38,7 +38,7 @@ Input             | Description
 **[site]**        | Type a site name or IP adress
 
 
-## Subtitle usage example 
+## Subtitle Example 
 
 * Command description: ```touch [file]```
 * Desired input #1: ```touch myFile.html```
@@ -46,7 +46,7 @@ Input             | Description
 
 Below, the commands are organized in groups:
 
-## Edit File 
+## File Editing
 
 Command                                 | Description 
 ----------------------------------------| -------------
@@ -58,7 +58,7 @@ list -a                                 | List visible & insisible files (a = al
 rm -rf **[file]**                       | Remove (r = recursive, f = force)
 rm * **[file]**                         | Wildcard. Removes all files with same letter combination or extension 
 
-## Wildcard usage example
+## Wildcard Example
 
 rm *[file]  | Description
 ------------|-------------
@@ -67,7 +67,7 @@ rm *.js     | Remove all javascript files
 rm a*.txt   | Remove all text files beginning with letter "a"
 
 
-## Find information in file 
+## Information Search on File 
 
 
 Command                                 | Description 
@@ -79,7 +79,7 @@ less **[file]**                         | Print file with navigation
 grep **[word]** **[file]**              | Search word and print line location
 find -name **[file]**                   | Find file location
 
-## Creating file / folder
+## File / Folder Creation
 
 Command                                 | Description 
 ----------------------------------------| -------------
@@ -87,7 +87,7 @@ touch **[file]**                        | Create file
 mkdir **[folder]**                      | Create folder
 echo **[word]** > **[file]**            | Write word inside file
 
-## Info about commands
+## Command Info
 
 Command                                 | Description 
 ----------------------------------------| -------------
@@ -96,7 +96,7 @@ history **[command]**                   | Gets list of all typed commands
 CTRL + R **[command]**                  | Reverse search. Find command from history, based on typed input
 cd ~/.bash_history                      | Go to invisible file in HOME directory that contains command history
 
-## SSH Key for remote host connection 
+## SSH Key for Remote Access 
 
 Command                                 | Description 
 ----------------------------------------| -------------
@@ -105,7 +105,7 @@ ls .ssh                                 | Confirm if SSH key was created
 ssh-copy-id **[host]**                  | Copy SSH key to remote computer
 ssh **[host]**                          | Login remote computer with SSH
 
-## Network troubleshooting
+## Network Troubleshooting
 
 Command                                 | Description 
 ----------------------------------------| -------------
@@ -117,7 +117,7 @@ whois **[site]**                        | Get all info about domain names regist
 whois **[site]** \| grep **[word]**     | Search for word inside whois command (\| = group commands together)
 whois **[site]** \| head                | Gets first 10 lines of whois command
 
-## Process management 
+## Process Management 
 
 Command                                 | Description 
 ----------------------------------------| -------------
