@@ -5,7 +5,26 @@
   Most commonly used Linux commands
 <p/>
 
-## Subtitle: 
+## Indice
+
+<!-- START doctoc generated TOC please keep comment here to allow auto update -->
+<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
+
+
+- [Subtitle](#subtitle)
+- [Subtitle usage example](#subtitle-usage-example)
+- [Edit File](#edit-file)
+- [Wildcard usage example](#wildcard-usage-example)
+- [Find information in file](#find-information-in-file)
+- [Creating file / folder](#creating-file--folder)
+- [Info about commands](#info-about-commands)
+- [SSH Key to remote computers](#ssh-key-to-remote-computers)
+- [Network troubleshooting](#network-troubleshooting)
+- [Process management](#process-management)
+
+<!-- END doctoc generated TOC please keep comment here to allow auto update -->
+
+## Subtitle
 
 Input             | Description
 ------------------|------------
@@ -19,7 +38,7 @@ Input             | Description
 **[site]**        | Type a site name or IP adress
 
 
-## Subtitle usage example: 
+## Subtitle usage example 
 
 * Command description: ```touch [file]```
 * Desired input #1: ```touch myFile.html```
@@ -39,7 +58,7 @@ list -a                                 | List visible & insisible files (a = al
 rm -rf **[file]**                       | Remove (r = recursive, f = force)
 rm * **[file]**                         | Wildcard. Removes all files with same letter combination or extension 
 
-## Wildcard usage example:
+## Wildcard usage example
 
 rm *[file]  | Description
 ------------|-------------
