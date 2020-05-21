@@ -2,7 +2,7 @@
   Cheat Sheet - <a href="https://en.wikipedia.org/wiki/Linux" target="_blank"> #Linux </a>
 </h1>
 <p align="center">
-  Most commonly used Linux commands
+  My most used Linux commands
 <p/>
 
 ## Indice
@@ -15,7 +15,7 @@
 - [Subtitle Example](#subtitle-example)
 - [File Editing](#file-editing)
 - [Wildcard Example](#wildcard-example)
-- [Information Search on File](#information-search-on-file)
+- [File info](#file-info)
 - [File / Folder Creation](#file--folder-creation)
 - [Command Info](#command-info)
 - [SSH Key for Remote Access](#ssh-key-for-remote-access)
@@ -31,7 +31,7 @@ Input             | Description
 **[ ]**           | Brackets only represent a user input (what you have to type)
 **[file]**        | Type a file name + extension (".txt", ".css", ".js", etc)
 **[folder]**      | Type a folder name
-**[destination]** | Type a directory path
+**[directory]**   | Type a directory path
 **[word]**        | Type a Word
 **[host]**        | Type a remote computer name + IP adress (example: peterComputer@178.68.xx.x)
 **[PID]**         | Type a process ID. It's a number listed in "top" or "ps" command and identifies the process
@@ -51,12 +51,10 @@ Below, the commands are organized in groups:
 Command                                 | Description 
 ----------------------------------------| -------------
 nano **[file]**                         | Open file to edit
-mv **[file]** **[file / destination]**  | Rename/move file
-cp [file] **[destination]**             | Copy to destination
-list -l                                 | List files with detailed info (l = long)
-list -a                                 | List visible & insisible files (a = all)
-rm -rf **[file]**                       | Remove (r = recursive, f = force)
-rm * **[file]**                         | Wildcard. Removes all files with same letter combination or extension 
+mv **[file]** **[file / directory]**    | Rename/move file
+cp [file] **[directory]**               | Copy to directory
+rm -rf **[file]**                       | Remove file (r = recursive, f = force)
+rm ***[file]**                         | Wildcard: remove all files with same letter combination or extension 
 
 ## Wildcard Example
 
@@ -67,17 +65,19 @@ rm *.js     | Remove all javascript files
 rm a*.txt   | Remove all text files beginning with letter "a"
 
 
-## Information Search on File 
+## File info
 
 
 Command                                 | Description 
 ----------------------------------------| -------------
-cat **[file]**                          | Concatenate (print file content)
-head **[file]**                         | Print file's fist 10 lines 
+list -l                                 | List files with detailed info (l = long)
+list -a                                 | List visible & insisible files (a = all)
+cat **[file]**                          | Concatenate: print file content
+head **[file]**                         | Print file's first 10 lines 
 tail **[file]**                         | Print file's last 10 lines
 less **[file]**                         | Print file with navigation
-grep **[word]** **[file]**              | Search word and print line location
-find -name **[file]**                   | Find file location
+grep **[word]** **[file]**              | Search word in file and print corresponding line
+find -name **[file]**                   | Find file directory
 
 ## File / Folder Creation
 
@@ -91,10 +91,10 @@ echo **[word]** > **[file]**            | Write word inside file
 
 Command                                 | Description 
 ----------------------------------------| -------------
-man **[command]**                       | Gets documentation about command
-history **[command]**                   | Gets list of all typed commands
-CTRL + R **[command]**                  | Reverse search. Find command from history, based on typed input
-cd ~/.bash_history                      | Go to invisible file in HOME directory that contains command history
+man **[command]**                       | Get documentation about command
+history **[command]**                   | Get list of all typed commands
+CTRL + R **[command]**                  | Reverse i-search: find command from history, based on typed input
+cd ~/.bash_history                      | Go to invisible file in HOME directory, which contains command history log
 
 ## SSH Key for Remote Access 
 
@@ -109,19 +109,19 @@ ssh **[host]**                          | Login remote computer with SSH
 
 Command                                 | Description 
 ----------------------------------------| -------------
-ifconfig                                | Network info
-hostname -I                             | IPV4 & IPV6 info
-route                                   | If "default" line has IP, you can contact servers outside your local network
-ping **[site]**                         | Check "packet loss" summary to see if you get good internet connection
-whois **[site]**                        | Get all info about domain names registered in the internet
-whois **[site]** \| grep **[word]**     | Search for word inside whois command (\| = group commands together)
-whois **[site]** \| head                | Gets first 10 lines of whois command
+ifconfig                                | Get network info
+hostname -I                             | Get IPV4 & IPV6 info
+route                                   | Chek if "default" line has IP, and if so, you can contact servers outside the local network
+ping **[site]**                         | Check "packet loss" summary to see if you have good internet connection
+whois **[site]**                        | Get all info about domain names registered on the Internet
+whois **[site]** \| grep **[word]**     | Search for word inside "whois" command (\| = group commands together)
+whois **[site]** \| head                | Get first 10 lines of "whois" command
 
 ## Process Management 
 
 Command                                 | Description 
 ----------------------------------------| -------------
 top                                     | List processes executing in the computer
-ps                                      | Similar to "ls" command but for processes
-ps aux                                  | More detailed info
+ps                                      | Similar to "ls" command, but for processes
+ps aux                                  | More detailed info to "ps" command
 kill **[PID]**                          | Kill process
