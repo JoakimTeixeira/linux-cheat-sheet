@@ -18,7 +18,7 @@
 - [Find information in file](#find-information-in-file)
 - [Creating file / folder](#creating-file--folder)
 - [Info about commands](#info-about-commands)
-- [SSH Key to remote computers](#ssh-key-to-remote-computers)
+- [SSH Key for remote host connection](#ssh-key-for-remote-host-connection)
 - [Network troubleshooting](#network-troubleshooting)
 - [Process management](#process-management)
 
@@ -33,7 +33,7 @@ Input             | Description
 **[folder]**      | Type a folder name
 **[destination]** | Type a directory path
 **[word]**        | Type a Word
-**[host]**        | Type a remote computer name + IP adress (example: peterComputer@178.68.52.8)
+**[host]**        | Type a remote computer name + IP adress (example: peterComputer@178.68.xx.x)
 **[PID]**         | Type a process ID. It's a number listed in "top" or "ps" command and identifies the process
 **[site]**        | Type a site name or IP adress
 
@@ -96,7 +96,7 @@ history **[command]**                   | Gets list of all typed commands
 CTRL + R **[command]**                  | Reverse search. Find command from history, based on typed input
 cd ~/.bash_history                      | Go to invisible file in HOME directory that contains command history
 
-## SSH Key to remote computers 
+## SSH Key for remote host connection 
 
 Command                                 | Description 
 ----------------------------------------| -------------
