@@ -33,9 +33,9 @@ Input             | Description
 **[folder]**      | Type a folder name
 **[directory]**   | Type a directory path
 **[word]**        | Type a Word
-**[host]**        | Type a remote computer name + IP adress (example: peterComputer@178.68.xx.x)
+**[host]**        | Type a remote computer name + IP address (example: peterComputer@178.68.xx.x)
 **[PID]**         | Type a process ID. It's a number listed in "top" or "ps" command and identifies the process
-**[site]**        | Type a site name or IP adress
+**[site]**        | Type a site name or IP address
 
 
 ## Subtitle Example 
@@ -54,7 +54,7 @@ nano **[file]**                         | Open file to edit
 mv **[file]** **[file / directory]**    | Rename/move file
 cp [file] **[directory]**               | Copy to directory
 rm -rf **[file]**                       | Remove file (r = recursive, f = force)
-rm ***[file]**                         | Wildcard: remove all files with same letter combination or extension 
+rm ***[file]**                          | Wildcard: remove all files with same letter combination or extension 
 
 ## Wildcard Example
 
@@ -62,7 +62,7 @@ rm *[file]  | Description
 ------------|-------------
 rm *        | Remove all files
 rm *.js     | Remove all javascript files
-rm a*.txt   | Remove all text files beginning with letter "a"
+rm a*.txt   | Remove all text files beginning with the letter "a"
 
 
 ## File info
@@ -92,9 +92,9 @@ echo **[word]** > **[file]**            | Write word inside file
 Command                                 | Description 
 ----------------------------------------| -------------
 man **[command]**                       | Get documentation about command
-history **[command]**                   | Get list of all typed commands
+history **[command]**                   | Get the list of all typed commands
 CTRL + R **[command]**                  | Reverse i-search: find command from history, based on typed input
-cd ~/.bash_history                      | Go to invisible file in HOME directory, which contains command history log
+cd ~/.bash_history                      | Go to invisible file in the HOME directory, which contains command history log
 
 ## SSH Key for Remote Access 
 
@@ -111,8 +111,8 @@ Command                                 | Description
 ----------------------------------------| -------------
 ifconfig                                | Get network info
 hostname -I                             | Get IPV4 & IPV6 info
-route                                   | Chek if "default" line has IP, and if so, you can contact servers outside the local network
-ping **[site]**                         | Check "packet loss" summary to see if you have good internet connection
+route                                   | Check if "default" line has IP, and if so, you can contact servers outside the local network
+ping **[site]**                         | Check "packet loss" summary to see if you have a good internet connection
 whois **[site]**                        | Get all info about domain names registered on the Internet
 whois **[site]** \| grep **[word]**     | Search for word inside "whois" command (\| = group commands together)
 whois **[site]** \| head                | Get first 10 lines of "whois" command
